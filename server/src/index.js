@@ -2,10 +2,10 @@ import connectDB from "./config/db.js";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.Routes.js";
 import express from "express";
-import { errorHandler } from "./middleware/
-errorHandler.Middleware.js";
+import { errorHandler } from "./middleware/errorHandler.Middleware.js";
+
 import cors from "cors";
-import {helmet} from "helmet";
+import helmet from "helmet";
 dotenv.config();
 connectDB();
 
