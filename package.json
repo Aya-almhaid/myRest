@@ -1,0 +1,26 @@
+{
+  "name": "myrest",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000y\u0000R\u0000e\u0000s\u0000t\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aya-almhaid/myRest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aya-almhaid/myRest/issues"
+  },
+  "homepage": "https://github.com/Aya-almhaid/myRest#readme",
+  "devDependencies": {
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5"
+  }
+}
