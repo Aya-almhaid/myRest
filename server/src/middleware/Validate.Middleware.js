@@ -1,15 +1,17 @@
 export const validate = (schema) => {
   return (req, res, next) => {
-    const { error } = schema.validate(req.body, {
+    const { error, value } = schema.validate(req.body, {
       abortEarly: false,
+      stripUnknown: true,
     });
 
     if (error) {
       return res.status(400).json({
-        sucssess: false,
-        message: error.details.map((detail) => error),
+        success: false,
+        message: error.details.map((detail) => detail.message),
       });
     }
+
     req.validated = value;
     next();
   };
