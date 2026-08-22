@@ -6,6 +6,6 @@ import express from "express";
 const router = express.Router();
 
 router.post("/register", validate(registerSchema), registerUser);
-router.post("/login", validate(loginSchema), loginUser);
+router.post("/auth/login", validate(loginSchema), loginUser);
 
 export default router;
